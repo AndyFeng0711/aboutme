@@ -82,3 +82,46 @@ body {
     .hero-left { width: 100%; height: 50%; top: auto; bottom: 0; }
   }
   
+
+  /* Blog 區塊 */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .blog-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 8px solid #0b3d91;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+  }
+  .blog-card a {
+    color: #0b3d91;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .blog-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 推薦網站 / 文章 */
+  .link-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .link-list li {
+    margin-bottom: 10px;
+  }
+  .link-list a {
+    color: #0b3d91;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  .link-list a:hover {
+    text-decoration: underline;
+  }
+  
