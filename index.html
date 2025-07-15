@@ -35,29 +35,29 @@
   </div>
 </header>
 
-<!-- Hero 區塊 -->
-<section class="hero-new" id="home">
-  <div class="container hero-row">
-
-    <!-- 左邊：照片 -->
-    <div class="hero-photo">
-      <img src="images/profile.jpg" alt="Andy Feng 大頭貼">
-    </div>
-
-    <!-- 右邊：個人卡片 -->
-    <div class="hero-info">
-      <h1>Andy Feng</h1>
-      <h3>Graduate Student in Economics</h3>
-      <p><strong>Email：</strong> andyfeng0711@gmail.com</p>
-      <p><strong>School：</strong> National Tsing Hua University</p>
-      <p><strong>Interests：</strong> Industrial Organization, Data Analysis, Public Policy</p>
-      <div class="hero-icons">
-        <a href="https://www.linkedin.com/in/andyfeng0711/" target="_blank">
-          <img src="images/social_13670350.png" alt="LinkedIn">
-        </a>
+<!-- HERO (主視覺) -->
+<section class="hero-section" id="home">
+  <div class="hero-left"></div>
+  <div class="container hero-content">
+    <div class="profile-card">
+      <img src="images/profile.jpg" alt="大頭貼" class="avatar">
+      <h2>Andy Feng</h2>
+      <p>掙扎的研究生</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/andyfeng0711/"><img src="images/social_13670350.png" alt="LinkedIn"></a>
       </div>
     </div>
-
+    <div class="intro-text">
+      <h1>Hello</h1>
+      <p>Here's who I am & what I do</p>
+      <div class="button-group">
+        <a href="#about" class="btn-primary">CV</a>
+        <a href="#projects" class="btn-secondary">Projects</a>
+      </div>
+      <p class="intro-desc">
+        我是 Andy，目前就讀於清華大學經濟研究所。  
+      </p>
+    </div>
   </div>
 </section>
 
@@ -163,11 +163,14 @@
 <section class="section" id="contact">
   <div class="container">
     <h2>Contact</h2>
-    <p>歡迎留言與我聯絡：</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesTW7mA7Z_pZy57deiWLWiWKEBOgCkQj5kOjTAxXhqFm_rHQ/viewform?embedded=true" width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+    <form class="contact-form">
+      <input type="text" placeholder="姓名" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="留言內容" required></textarea>
+      <button type="submit">送出訊息</button>
+    </form>
   </div>
 </section>
-
 
 <!-- Footer -->
 <footer>
