@@ -35,8 +35,12 @@ body {
     background: #fff; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   }
   .avatar {
-    width: 220px; height: 220px; border-radius: 50%; object-fit: cover;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
   }
+  
   .social-icons img { width: 24px; margin: 10px 5px 0; }
   .intro-text h1 { font-size: 3em; margin-bottom: 10px; }
   .button-group { margin: 20px 0; }
