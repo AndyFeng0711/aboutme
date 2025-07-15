@@ -1,63 +1,82 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doctorate Adventure - Andy Feng</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Andy Feng | 個人網站</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Doctorate Adventure</h1>
-      <nav class="nav-right">
-        <select id="lang-select">
-          <option value="zh-TW">繁體中文</option>
-          <option value="en">English</option>
-        </select>
+  <!-- 導覽列 -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Andy Feng</div>
+      <nav>
+        <a href="#home">首頁</a>
+        <a href="#about">關於我</a>
+        <a href="#projects">作品集</a>
+        <a href="#contact">聯絡我</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <!-- HERO 區 -->
+  <section class="hero" id="home">
     <div class="container hero-content">
-      <h2>探索我的博士旅程與心路日誌</h2>
-      <p>追尋學術與生活的平衡，在未知中成長。</p>
-      <a href="#posts" class="btn">開始探索</a>
+      <h1>Welcome to Andy's Doctorate Adventure</h1>
+      <p>勇敢探索經濟、資料分析與生活的每一步</p>
+      <a class="cta-btn" href="#about">關於我</a>
     </div>
   </section>
 
-  <main class="container">
-    <section id="posts" class="posts">
-      <h2>最新文章</h2>
-      <div class="post-list">
-        <article class="post-card">
-          <img src="images/post-sample1.jpg" alt="">
-          <div class="post-info">
-            <h3><a href="#">我的博士心境：第一年分享</a></h3>
-            <p>心得、挑戰與收穫，一起看看我開始的旅程。</p>
-          </div>
-        </article>
-        <article class="post-card">
-          <img src="images/post-sample2.jpg" alt="">
-          <div class="post-info">
-            <h3><a href="#">走出國門：國際研究經驗記錄</a></h3>
-            <p>與國際研究團隊合作的體會與學習。</p>
-          </div>
-        </article>
+  <!-- 兩欄區塊範例 -->
+  <section class="two-column" id="about">
+    <div class="container columns">
+      <div class="col left">
+        <img src="images/profile.jpg" alt="我的照片" />
       </div>
-    </section>
+      <div class="col right">
+        <h2>Hi! 我是 Andy</h2>
+        <p>現為經濟學研究生，熱愛知識、探索新領域。這個網站記錄我的學術旅程、技術專案與日常靈感。</p>
+        <a class="simple-btn" href="#projects">看我的作品</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="about">
-      <h2>關於我</h2>
-      <p>我是 Andy Feng，一位熱愛研究與旅行的博士生，探索學術與生活的交集。</p>
-    </section>
-  </main>
+  <!-- 內容卡片區（作品集） -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>作品集</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/project1.jpg" alt="作品1">
+          <div class="card-body">
+            <h3>論文研究</h3>
+            <p>經濟議題分析與跨國比較。</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/project2.jpg" alt="作品2">
+          <div class="card-body">
+            <h3>前端練習</h3>
+            <p>個人網站、互動網頁設計。</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/project3.jpg" alt="作品3">
+          <div class="card-body">
+            <h3>資料分析</h3>
+            <p>用 Python 分析真實數據。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer class="site-footer">
+  <!-- Footer -->
+  <footer>
     <div class="container">
       <p>&copy; 2025 Andy Feng. All rights reserved.</p>
-      <p>Contact: <a href="mailto:andy@example.com">andy@example.com</a></p>
     </div>
   </footer>
 </body>
