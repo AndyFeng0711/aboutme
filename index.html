@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <title>Andy Feng | 個人網站</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctorate Adventure - Andy Feng</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="index.html">首頁</a>
-    <a href="about.html">關於我</a>
-    <a href="projects.html">作品集</a>
-    <a href="contact.html">聯絡我</a>
-  </nav>
-
-  <div class="main">
-    <div class="left-card">
-      <img src="images/profile.jpg" alt="大頭貼" class="avatar">
-      <h2>Andy Feng</h2>
-      <p class="subtitle">經濟研究生</p>
-      <div class="social">
-        <a href="#"><img src="images/fb.png" alt="FB"></a>
-        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-      </div>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Doctorate Adventure</h1>
+      <nav class="nav-right">
+        <select id="lang-select">
+          <option value="zh-TW">繁體中文</option>
+          <option value="en">English</option>
+        </select>
+      </nav>
     </div>
+  </header>
 
-    <div class="right-content">
-      <h1>Hello</h1>
-      <p class="subtext">Here's who I am & what I do</p>
-      <div class="buttons">
-        <a class="btn primary" href="about.html">Resume</a>
-        <a class="btn" href="projects.html">Projects</a>
-      </div>
-      <p class="description">我是 Andy，來自台灣，目前是經濟研究所學生，熟悉資料分析與前端開發。正在建立屬於自己的個人品牌網站。</p>
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>探索我的博士旅程與心路日誌</h2>
+      <p>追尋學術與生活的平衡，在未知中成長。</p>
+      <a href="#posts" class="btn">開始探索</a>
     </div>
-  </div>
-
-  <section class="section">
-    <h2>📌 推薦網站</h2>
-    <ul>
-      <li><a href="https://www.econ.sinica.edu.tw/" target="_blank">中研院經濟所</a></li>
-      <li><a href="https://econpapers.repec.org/" target="_blank">EconPapers</a></li>
-    </ul>
   </section>
 
-  <section class="section">
-    <h2>📖 推薦文章</h2>
-    <ul>
-      <li><a href="#">ChatGPT 如何幫我完成學術報告</a></li>
-      <li><a href="#">從零開始的資料分析學習路</a></li>
-    </ul>
-  </section>
+  <main class="container">
+    <section id="posts" class="posts">
+      <h2>最新文章</h2>
+      <div class="post-list">
+        <article class="post-card">
+          <img src="images/post-sample1.jpg" alt="">
+          <div class="post-info">
+            <h3><a href="#">我的博士心境：第一年分享</a></h3>
+            <p>心得、挑戰與收穫，一起看看我開始的旅程。</p>
+          </div>
+        </article>
+        <article class="post-card">
+          <img src="images/post-sample2.jpg" alt="">
+          <div class="post-info">
+            <h3><a href="#">走出國門：國際研究經驗記錄</a></h3>
+            <p>與國際研究團隊合作的體會與學習。</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Andy Feng. All rights reserved.</p>
+    <section class="about">
+      <h2>關於我</h2>
+      <p>我是 Andy Feng，一位熱愛研究與旅行的博士生，探索學術與生活的交集。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Andy Feng. All rights reserved.</p>
+      <p>Contact: <a href="mailto:andy@example.com">andy@example.com</a></p>
+    </div>
   </footer>
 </body>
 </html>
