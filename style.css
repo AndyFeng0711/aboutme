@@ -104,4 +104,36 @@ body {
   li a:hover {
     text-decoration: underline;
   }
+  /* 英雄區（背景橫幅） */
+.hero-banner {
+    background-image: url("images/banner1.jpg"); /* 可以換 banner2.jpg、banner3.jpg */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-text {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #0077cc;
+  }
+  
+  .hero-text p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+  }
   
