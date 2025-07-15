@@ -151,4 +151,19 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.05);
   }
-  
+
+
+/* 新 Hero 區塊樣式 */
+.hero-new {
+  background: linear-gradient(to bottom right, #0b3d91 40%, #f5f2ed 60%);
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.hero-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50
+}
