@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andy 的個人網站</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- 🔹 導覽列 -->
   <nav>
     <a href="index.html">首頁</a>
     <a href="about.html">關於我</a>
@@ -14,19 +16,37 @@
     <a href="contact.html">聯絡我</a>
   </nav>
 
-  <section class="hero-banner">
-    <div class="hero-text">
-      <h1>哈囉，我是 Andy</h1>
-      <p>歡迎來到我的個人網站</p>
+  <!-- 🔸 主體：左側卡片＋右側介紹 -->
+  <div class="container">
+    <!-- 左側卡片 -->
+    <div class="profile-card">
+      <img src="images/profile.jpg" alt="個人大頭貼" class="avatar">
+      <h2>Andy Feng</h2>
+      <p class="title">經濟研究生</p>
+      <div class="socials">
+        <a href="#"><img src="images/icon-facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/icon-linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="images/icon-github.png" alt="GitHub"></a>
+      </div>
     </div>
-  </section>
 
-  <div class="profile-section">
-    <img src="images/profile.jpg" alt="個人大頭貼" class="avatar">
-    <p class="intro-text">我是學前端與經濟研究的研究生，喜歡排球與探索科技。</p>
+    <!-- 右側內容 -->
+    <div class="intro">
+      <h1>Hello</h1>
+      <p class="subtitle">Here's who I am & what I do</p>
+      <div class="buttons">
+        <a href="#" class="btn">Resume</a>
+        <a href="projects.html" class="btn outline">Projects</a>
+      </div>
+      <p class="desc">
+        我是來自台灣的經濟研究生，熱愛資料分析、前端開發與財務研究。<br>
+        正在一步步打造屬於自己的履歷與作品展示網站。
+      </p>
+    </div>
   </div>
 
-  <section class="links-section">
+  <!-- 🔹 推薦網站 -->
+  <section class="section">
     <h2>🔗 推薦網站</h2>
     <ul class="card-list">
       <li><a href="https://www.ted.com/" target="_blank">TED Talks</a></li>
@@ -35,17 +55,18 @@
     </ul>
   </section>
 
-  <section class="articles-section">
+  <!-- 🔹 推薦文章 -->
+  <section class="section">
     <h2>📚 推薦文章</h2>
     <ul class="card-list">
       <li>
         <strong>學習 GitHub Pages 的完整流程</strong><br>
-        – 建立個人網站必看。<br>
+        建立個人網站必看。<br>
         <a href="https://pages.github.com/" target="_blank">閱讀文章</a>
       </li>
       <li>
         <strong>網站新手排版指南</strong><br>
-        – 從 HTML 開始學排版。<br>
+        從 HTML 開始學排版。<br>
         <a href="https://developer.mozilla.org/zh-TW/docs/Learn/HTML" target="_blank">閱讀文章</a>
       </li>
     </ul>
