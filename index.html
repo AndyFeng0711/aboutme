@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Andy Feng | 個人網站</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- 導覽列 -->
+  <!-- Sticky 導覽列 -->
   <header class="navbar">
     <div class="container nav-container">
       <div class="logo">Andy Feng</div>
@@ -20,63 +20,65 @@
     </div>
   </header>
 
-  <!-- HERO 區 -->
+  <!-- HERO Section (大頭貼居中+名字標語) -->
   <section class="hero" id="home">
     <div class="container hero-content">
-      <h1>Welcome to Andy's Doctorate Adventure</h1>
-      <p>勇敢探索經濟、資料分析與生活的每一步</p>
-      <a class="cta-btn" href="#about">關於我</a>
+      <img class="hero-avatar" src="images/profile.jpg" alt="大頭貼" />
+      <h1 class="hero-title">Andy Feng</h1>
+      <p class="hero-subtitle">勇敢探索經濟與數據的學術旅程</p>
+      <a class="hero-btn" href="#about">關於我</a>
     </div>
   </section>
 
-  <!-- 兩欄區塊範例 -->
-  <section class="two-column" id="about">
-    <div class="container columns">
-      <div class="col left">
-        <img src="images/profile.jpg" alt="我的照片" />
-      </div>
-      <div class="col right">
-        <h2>Hi! 我是 Andy</h2>
-        <p>現為經濟學研究生，熱愛知識、探索新領域。這個網站記錄我的學術旅程、技術專案與日常靈感。</p>
-        <a class="simple-btn" href="#projects">看我的作品</a>
-      </div>
+  <!-- About Me -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2>關於我</h2>
+      <p>現為經濟研究生，專注於資料分析與前端學習，這個網站記錄我的學術成長與生活靈感。</p>
     </div>
   </section>
 
-  <!-- 內容卡片區（作品集） -->
-  <section class="projects" id="projects">
+  <!-- Projects -->
+  <section class="section" id="projects">
     <div class="container">
       <h2>作品集</h2>
       <div class="card-grid">
         <div class="card">
-          <img src="images/project1.jpg" alt="作品1">
-          <div class="card-body">
-            <h3>論文研究</h3>
-            <p>經濟議題分析與跨國比較。</p>
-          </div>
+          <img src="images/project1.jpg" alt="作品1" />
+          <h3>研究專案一</h3>
+          <p>經濟議題數據分析</p>
         </div>
         <div class="card">
-          <img src="images/project2.jpg" alt="作品2">
-          <div class="card-body">
-            <h3>前端練習</h3>
-            <p>個人網站、互動網頁設計。</p>
-          </div>
+          <img src="images/project2.jpg" alt="作品2" />
+          <h3>前端作品二</h3>
+          <p>互動式個人網站設計</p>
         </div>
         <div class="card">
-          <img src="images/project3.jpg" alt="作品3">
-          <div class="card-body">
-            <h3>資料分析</h3>
-            <p>用 Python 分析真實數據。</p>
-          </div>
+          <img src="images/project3.jpg" alt="作品3" />
+          <h3>Python 數據</h3>
+          <p>真實資料分析練習</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>聯絡我</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="你的名字" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="想說的話..." required></textarea>
+        <button type="submit">送出</button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Andy Feng. All rights reserved.</p>
+      <p>&copy; 2025 Andy Feng | All rights reserved.</p>
     </div>
   </footer>
 </body>
